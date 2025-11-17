@@ -6,6 +6,7 @@
     --dark: #000000;
 }
 
+/********** Back to Top **********/
 .back-to-top {
     position: fixed;
     display: none;
@@ -14,8 +15,7 @@
     z-index: 99;
 }
 
-
-/*** Spinner ***/
+/********** Spinner **********/
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -29,10 +29,20 @@
     opacity: 1;
 }
 
-
-/*** Button ***/
+/********** Button **********/
 .btn {
     transition: .5s;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
 }
 
 .btn-square {
@@ -50,19 +60,7 @@
     height: 48px;
 }
 
-.btn-square,
-.btn-sm-square,
-.btn-lg-square {
-    padding: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
-    border-radius: 50px;
-}
-
-
-/*** Layout ***/
+/********** Layout **********/
 .sidebar {
     position: fixed;
     top: 0;
@@ -83,6 +81,7 @@
     transition: 0.5s;
 }
 
+/* Sidebar & Content Responsive */
 @media (min-width: 992px) {
     .sidebar {
         margin-left: 0;
@@ -117,8 +116,7 @@
     }
 }
 
-
-/*** Navbar ***/
+/********** Sidebar Navbar **********/
 .sidebar .navbar .navbar-nav .nav-link {
     padding: 7px 20px;
     color: var(--light);
@@ -176,6 +174,7 @@
     background: var(--dark);
 }
 
+/********** Content Navbar **********/
 .content .navbar .navbar-nav .nav-link {
     margin-left: 25px;
     padding: 12px 0;
@@ -228,8 +227,7 @@
     }
 }
 
-
-/*** Date Picker ***/
+/********** Date Picker **********/
 .bootstrap-datetimepicker-widget.bottom {
     top: auto !important;
 }
@@ -256,15 +254,13 @@
     border-bottom-color: var(--primary);
 }
 
-
-/*** Testimonial ***/
+/********** Progress **********/
 .progress .progress-bar {
     width: 0px;
     transition: 2s;
 }
 
-
-/*** Testimonial ***/
+/********** Testimonial **********/
 .testimonial-carousel .owl-dots {
     margin-top: 24px;
     display: flex;
